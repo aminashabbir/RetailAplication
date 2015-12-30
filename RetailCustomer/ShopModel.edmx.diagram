@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="80de4012b933409a8ccc3c9ab7018522" Name="Diagram1">
+        <EntityTypeShape EntityType="RetailModel.admincongifsetting" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.authority" Width="1.5" PointX="0.75" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.borrowlend" Width="1.5" PointX="7.5" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.borrowlendstatus" Width="1.5" PointX="5.25" PointY="16.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.borrowlendstock" Width="1.5" PointX="12.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.borrowreturn" Width="1.5" PointX="9.75" PointY="28.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.borrowreturnitem" Width="1.5" PointX="15" PointY="27.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.borrowstock" Width="1.5" PointX="17.25" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.category" Width="1.5" PointX="3.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.companyinfo" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.configdetail" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.department" Width="1.5" PointX="3" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.designation" Width="1.5" PointX="3" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.employee" Width="1.5" PointX="5.25" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.employerstock" Width="1.5" PointX="10.5" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.order" Width="1.5" PointX="10.5" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.orderpartial" Width="1.5" PointX="12.75" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.orderplaceditem" Width="1.5" PointX="12.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.orderstatu" Width="1.5" PointX="8.25" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.patient" Width="1.5" PointX="15.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.paymenttype" Width="1.5" PointX="15.75" PointY="35.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.pharmacylog" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.product" Width="1.5" PointX="6" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.productdetail" Width="1.5" PointX="8.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.productsupplied" Width="1.5" PointX="10.5" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.returnitem" Width="1.5" PointX="15" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.returnofborrow" Width="1.5" PointX="7.5" PointY="32.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.returnofsale" Width="1.5" PointX="12.75" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.roleandauthority" Width="1.5" PointX="3" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.role" Width="1.5" PointX="0.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.sale" Width="1.5" PointX="18" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.salesday" Width="1.5" PointX="8.25" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.salesmansaleday" Width="1.5" PointX="10.5" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.salesmanstatu" Width="1.5" PointX="8.25" PointY="36.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.solditem" Width="1.5" PointX="20.25" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.soldstock" Width="1.5" PointX="22.5" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.stock" Width="1.5" PointX="15" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.supplier" Width="1.5" PointX="8.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="RetailModel.user" Width="1.5" PointX="3" PointY="21" IsExpanded="true" />
+        <AssociationConnector Association="RetailModel.fk_Configdetails_Admincongifsettings1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_RoleAndAuthorities_Authorities1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_Users_Authorities1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_BorrowLend_BorrowLendStatuses1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_BorrowLend_Employee1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_BorrowLend_Order1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_BorrowLend_Supplier1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_BorrowLendStock_BorrowLend1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_BorrowReturn_BorrowLend1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_BorrowLendStock_ProductDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_BorrowReturnItems_BorrowLendStock1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_BorrowStock_BorrowLendStock1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_BorrowReturn_ReturnOfBorrow1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_BorrowReturnItems_ReturnOfBorrow1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_BorrowStock_Stock1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_Product_Category1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_Employee_Department1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_Designation_Designation1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_Employee_Designation1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_empID" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_Employee_Employee1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_Employee_Users1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_EmployerStock_Employee1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_Order_Employee1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_OrderHistory_Employee1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_ReturnOfBorrow_Employee1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_Sales_Employee1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_EmployerStock_Stock1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_Order_OrderStatus1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_Order_Supplier1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_OrderHistory_Order1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_OrderPlacedItems_Order1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_Stock_OrderPartials1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_OrderPlacedItems_ProductSupplied1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_Sales_Patients1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_paymenttype1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_productDetails_Product1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_product_suplied_ProductDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_SoldItems_ProductDetails1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_ProductSuplied_Supplier1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_Stock_ProductSupplied1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_ReturnItems_ReturnOfSales1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_ReturnItems_SoldItems1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_ReturnOfSales_Sales1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_Sales_ReturnOfSales1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_salesmanSaleDay_return" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_RoleAndAuthorities_Roles1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_Roles_Roles1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_salesmanSaleDay" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_SoldItems_Sales1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_salesmansaleday_salesday1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_salesmansaleday_salesmanstatus" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_table1_SoldItems1" ManuallyRouted="false" />
+        <AssociationConnector Association="RetailModel.fk_table1_Stock1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

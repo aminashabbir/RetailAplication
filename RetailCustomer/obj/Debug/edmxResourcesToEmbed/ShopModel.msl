@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RetailModelStoreContainer" CdmEntityContainer="tobaccocastleEntities">
+    <EntitySetMapping Name="admincongifsettings">
+      <EntityTypeMapping TypeName="RetailModel.admincongifsetting">
+        <MappingFragment StoreEntitySet="admincongifsettings">
+          <ScalarProperty Name="adminCongifSettingsId" ColumnName="adminCongifSettingsId" />
+          <ScalarProperty Name="configName" ColumnName="configName" />
+          <ScalarProperty Name="configValueType" ColumnName="configValueType" />
+          <ScalarProperty Name="configDiscription" ColumnName="configDiscription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="authorities">
+      <EntityTypeMapping TypeName="RetailModel.authority">
+        <MappingFragment StoreEntitySet="authorities">
+          <ScalarProperty Name="authorityId" ColumnName="authorityId" />
+          <ScalarProperty Name="authority1" ColumnName="authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="borrowlends">
+      <EntityTypeMapping TypeName="RetailModel.borrowlend">
+        <MappingFragment StoreEntitySet="borrowlend">
+          <ScalarProperty Name="borrowLendId" ColumnName="borrowLendId" />
+          <ScalarProperty Name="netAmount" ColumnName="netAmount" />
+          <ScalarProperty Name="lendingDate" ColumnName="lendingDate" />
+          <ScalarProperty Name="borrowerName" ColumnName="borrowerName" />
+          <ScalarProperty Name="empId" ColumnName="empId" />
+          <ScalarProperty Name="borrowLendStatusId" ColumnName="borrowLendStatusId" />
+          <ScalarProperty Name="lendingNumber" ColumnName="lendingNumber" />
+          <ScalarProperty Name="branchAsSupplierId" ColumnName="branchAsSupplierId" />
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="borrowlendstatuses">
+      <EntityTypeMapping TypeName="RetailModel.borrowlendstatus">
+        <MappingFragment StoreEntitySet="borrowlendstatuses">
+          <ScalarProperty Name="borrowLendStatusId" ColumnName="borrowLendStatusId" />
+          <ScalarProperty Name="statusName" ColumnName="statusName" />
+          <ScalarProperty Name="discription" ColumnName="discription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="borrowlendstocks">
+      <EntityTypeMapping TypeName="RetailModel.borrowlendstock">
+        <MappingFragment StoreEntitySet="borrowlendstock">
+          <ScalarProperty Name="borrowLendStockId" ColumnName="borrowLendStockId" />
+          <ScalarProperty Name="borrowLendId" ColumnName="borrowLendId" />
+          <ScalarProperty Name="quantityBorrowed" ColumnName="quantityBorrowed" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="productDetailId" ColumnName="productDetailId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="borrowreturns">
+      <EntityTypeMapping TypeName="RetailModel.borrowreturn">
+        <MappingFragment StoreEntitySet="borrowreturn">
+          <ScalarProperty Name="borrowReturnId" ColumnName="borrowReturnId" />
+          <ScalarProperty Name="returnOfBorrowId" ColumnName="returnOfBorrowId" />
+          <ScalarProperty Name="borrowLendId" ColumnName="borrowLendId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="borrowreturnitems">
+      <EntityTypeMapping TypeName="RetailModel.borrowreturnitem">
+        <MappingFragment StoreEntitySet="borrowreturnitems">
+          <ScalarProperty Name="borrowReturnItemsId" ColumnName="borrowReturnItemsId" />
+          <ScalarProperty Name="returnOfBorrowId" ColumnName="returnOfBorrowId" />
+          <ScalarProperty Name="borrowLendStockId" ColumnName="borrowLendStockId" />
+          <ScalarProperty Name="quantityReturn" ColumnName="quantityReturn" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="borrowstocks">
+      <EntityTypeMapping TypeName="RetailModel.borrowstock">
+        <MappingFragment StoreEntitySet="borrowstock">
+          <ScalarProperty Name="borrowStockId" ColumnName="borrowStockId" />
+          <ScalarProperty Name="borrowLendStockId" ColumnName="borrowLendStockId" />
+          <ScalarProperty Name="stockId" ColumnName="stockId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="categories">
+      <EntityTypeMapping TypeName="RetailModel.category">
+        <MappingFragment StoreEntitySet="category">
+          <ScalarProperty Name="categoryId" ColumnName="categoryId" />
+          <ScalarProperty Name="categoryName" ColumnName="categoryName" />
+          <ScalarProperty Name="categoryUnit" ColumnName="categoryUnit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="companyinfoes">
+      <EntityTypeMapping TypeName="RetailModel.companyinfo">
+        <MappingFragment StoreEntitySet="companyinfo">
+          <ScalarProperty Name="companyInfoId" ColumnName="companyInfoId" />
+          <ScalarProperty Name="compName" ColumnName="compName" />
+          <ScalarProperty Name="CompWebsite" ColumnName="CompWebsite" />
+          <ScalarProperty Name="CompPrintAddress" ColumnName="CompPrintAddress" />
+          <ScalarProperty Name="CompLongAddress" ColumnName="CompLongAddress" />
+          <ScalarProperty Name="CompContactNo" ColumnName="CompContactNo" />
+          <ScalarProperty Name="CompEmailId" ColumnName="CompEmailId" />
+          <ScalarProperty Name="CompFootNote1" ColumnName="CompFootNote1" />
+          <ScalarProperty Name="CompFootNote2" ColumnName="CompFootNote2" />
+          <ScalarProperty Name="prinerType" ColumnName="prinerType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="configdetails">
+      <EntityTypeMapping TypeName="RetailModel.configdetail">
+        <MappingFragment StoreEntitySet="configdetails">
+          <ScalarProperty Name="configDetailsId" ColumnName="configDetailsId" />
+          <ScalarProperty Name="configValue" ColumnName="configValue" />
+          <ScalarProperty Name="adminCongifSettingsId" ColumnName="adminCongifSettingsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="departments">
+      <EntityTypeMapping TypeName="RetailModel.department">
+        <MappingFragment StoreEntitySet="department">
+          <ScalarProperty Name="departmentId" ColumnName="departmentId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="designations">
+      <EntityTypeMapping TypeName="RetailModel.designation">
+        <MappingFragment StoreEntitySet="designation">
+          <ScalarProperty Name="designationId" ColumnName="designationId" />
+          <ScalarProperty Name="designation1" ColumnName="designation" />
+          <ScalarProperty Name="level" ColumnName="level" />
+          <ScalarProperty Name="parentDesignationId" ColumnName="parentDesignationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="employees">
+      <EntityTypeMapping TypeName="RetailModel.employee">
+        <MappingFragment StoreEntitySet="employee">
+          <ScalarProperty Name="empId" ColumnName="empId" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="birthDate" ColumnName="birthDate" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="mobile" ColumnName="mobile" />
+          <ScalarProperty Name="remarks" ColumnName="remarks" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="joiningDate" ColumnName="joiningDate" />
+          <ScalarProperty Name="designationId" ColumnName="designationId" />
+          <ScalarProperty Name="departmentId" ColumnName="departmentId" />
+          <ScalarProperty Name="managerId" ColumnName="managerId" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="employerstocks">
+      <EntityTypeMapping TypeName="RetailModel.employerstock">
+        <MappingFragment StoreEntitySet="employerstock">
+          <ScalarProperty Name="employerStockId" ColumnName="employerStockId" />
+          <ScalarProperty Name="stockId" ColumnName="stockId" />
+          <ScalarProperty Name="empId" ColumnName="empId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="orders">
+      <EntityTypeMapping TypeName="RetailModel.order">
+        <MappingFragment StoreEntitySet="order">
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+          <ScalarProperty Name="orderStatusId" ColumnName="orderStatusId" />
+          <ScalarProperty Name="orderNumber" ColumnName="orderNumber" />
+          <ScalarProperty Name="orderDate" ColumnName="orderDate" />
+          <ScalarProperty Name="empId" ColumnName="empId" />
+          <ScalarProperty Name="supplierId" ColumnName="supplierId" />
+          <ScalarProperty Name="statusChangedDiscription" ColumnName="statusChangedDiscription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="orderpartials">
+      <EntityTypeMapping TypeName="RetailModel.orderpartial">
+        <MappingFragment StoreEntitySet="orderpartials">
+          <ScalarProperty Name="orderPartialsId" ColumnName="orderPartialsId" />
+          <ScalarProperty Name="discription" ColumnName="discription" />
+          <ScalarProperty Name="recevingDate" ColumnName="recevingDate" />
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+          <ScalarProperty Name="empId" ColumnName="empId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="orderplaceditems">
+      <EntityTypeMapping TypeName="RetailModel.orderplaceditem">
+        <MappingFragment StoreEntitySet="orderplaceditems">
+          <ScalarProperty Name="orderPlacedItemsId" ColumnName="orderPlacedItemsId" />
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+          <ScalarProperty Name="quantityOrderd" ColumnName="quantityOrderd" />
+          <ScalarProperty Name="productSuppliedId" ColumnName="productSuppliedId" />
+          <ScalarProperty Name="ratePrUnit" ColumnName="ratePrUnit" />
+          <ScalarProperty Name="packSize" ColumnName="packSize" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="orderstatus">
+      <EntityTypeMapping TypeName="RetailModel.orderstatu">
+        <MappingFragment StoreEntitySet="orderstatus">
+          <ScalarProperty Name="orderStatusId" ColumnName="orderStatusId" />
+          <ScalarProperty Name="statusName" ColumnName="statusName" />
+          <ScalarProperty Name="statusDiscription" ColumnName="statusDiscription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="patients">
+      <EntityTypeMapping TypeName="RetailModel.patient">
+        <MappingFragment StoreEntitySet="patients">
+          <ScalarProperty Name="patientsId" ColumnName="patientsId" />
+          <ScalarProperty Name="patientName" ColumnName="patientName" />
+          <ScalarProperty Name="patientFatherName" ColumnName="patientFatherName" />
+          <ScalarProperty Name="contactNumber" ColumnName="contactNumber" />
+          <ScalarProperty Name="emailId" ColumnName="emailId" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="dateOfBirth" ColumnName="dateOfBirth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="paymenttypes">
+      <EntityTypeMapping TypeName="RetailModel.paymenttype">
+        <MappingFragment StoreEntitySet="paymenttype">
+          <ScalarProperty Name="paymentTypeId" ColumnName="paymentTypeId" />
+          <ScalarProperty Name="paymentTypeName" ColumnName="paymentTypeName" />
+          <ScalarProperty Name="paymentTypeDisc" ColumnName="paymentTypeDisc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pharmacylogs">
+      <EntityTypeMapping TypeName="RetailModel.pharmacylog">
+        <MappingFragment StoreEntitySet="pharmacylog">
+          <ScalarProperty Name="pharmacyLogId" ColumnName="pharmacyLogId" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="tableName" ColumnName="tableName" />
+          <ScalarProperty Name="actionPerformed" ColumnName="actionPerformed" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="Discription" ColumnName="Discription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="products">
+      <EntityTypeMapping TypeName="RetailModel.product">
+        <MappingFragment StoreEntitySet="product">
+          <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="productName" ColumnName="productName" />
+          <ScalarProperty Name="categoryId" ColumnName="categoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="productdetails">
+      <EntityTypeMapping TypeName="RetailModel.productdetail">
+        <MappingFragment StoreEntitySet="productdetails">
+          <ScalarProperty Name="productDetailId" ColumnName="productDetailId" />
+          <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="productSize" ColumnName="productSize" />
+          <ScalarProperty Name="alertBFExpiryDays" ColumnName="alertBFExpiryDays" />
+          <ScalarProperty Name="thresholdLevel" ColumnName="thresholdLevel" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="productsupplieds">
+      <EntityTypeMapping TypeName="RetailModel.productsupplied">
+        <MappingFragment StoreEntitySet="productsupplied">
+          <ScalarProperty Name="productSuppliedId" ColumnName="productSuppliedId" />
+          <ScalarProperty Name="productDetailId" ColumnName="productDetailId" />
+          <ScalarProperty Name="supplierId" ColumnName="supplierId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="returnitems">
+      <EntityTypeMapping TypeName="RetailModel.returnitem">
+        <MappingFragment StoreEntitySet="returnitems">
+          <ScalarProperty Name="returnItemsId" ColumnName="returnItemsId" />
+          <ScalarProperty Name="quantityReturned" ColumnName="quantityReturned" />
+          <ScalarProperty Name="returnAmount" ColumnName="returnAmount" />
+          <ScalarProperty Name="soldItemId" ColumnName="soldItemId" />
+          <ScalarProperty Name="returnOfSalesId" ColumnName="returnOfSalesId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="returnofborrows">
+      <EntityTypeMapping TypeName="RetailModel.returnofborrow">
+        <MappingFragment StoreEntitySet="returnofborrow">
+          <ScalarProperty Name="returnOfBorrowId" ColumnName="returnOfBorrowId" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="netAmountReturn" ColumnName="netAmountReturn" />
+          <ScalarProperty Name="empId" ColumnName="empId" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="returnofsales">
+      <EntityTypeMapping TypeName="RetailModel.returnofsale">
+        <MappingFragment StoreEntitySet="returnofsales">
+          <ScalarProperty Name="returnOfSalesId" ColumnName="returnOfSalesId" />
+          <ScalarProperty Name="amountToReturn" ColumnName="amountToReturn" />
+          <ScalarProperty Name="returnType" ColumnName="returnType" />
+          <ScalarProperty Name="salesId" ColumnName="salesId" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="salesmanSaleDayId" ColumnName="salesmanSaleDayId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="roleandauthorities">
+      <EntityTypeMapping TypeName="RetailModel.roleandauthority">
+        <MappingFragment StoreEntitySet="roleandauthorities">
+          <ScalarProperty Name="roleAndAuthoritiesId" ColumnName="roleAndAuthoritiesId" />
+          <ScalarProperty Name="authorityId" ColumnName="authorityId" />
+          <ScalarProperty Name="rolesId" ColumnName="rolesId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="roles">
+      <EntityTypeMapping TypeName="RetailModel.role">
+        <MappingFragment StoreEntitySet="roles">
+          <ScalarProperty Name="rolesId" ColumnName="rolesId" />
+          <ScalarProperty Name="displayText" ColumnName="displayText" />
+          <ScalarProperty Name="actionName" ColumnName="actionName" />
+          <ScalarProperty Name="controlerName" ColumnName="controlerName" />
+          <ScalarProperty Name="parentRolesId" ColumnName="parentRolesId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sales">
+      <EntityTypeMapping TypeName="RetailModel.sale">
+        <MappingFragment StoreEntitySet="sales">
+          <ScalarProperty Name="salesId" ColumnName="salesId" />
+          <ScalarProperty Name="date" ColumnName="date" />
+          <ScalarProperty Name="empId" ColumnName="empId" />
+          <ScalarProperty Name="saleAmount" ColumnName="saleAmount" />
+          <ScalarProperty Name="salesStatus" ColumnName="salesStatus" />
+          <ScalarProperty Name="discounPercentage" ColumnName="discounPercentage" />
+          <ScalarProperty Name="netAmount" ColumnName="netAmount" />
+          <ScalarProperty Name="patientsId" ColumnName="patientsId" />
+          <ScalarProperty Name="salesNumber" ColumnName="salesNumber" />
+          <ScalarProperty Name="returnOfSalesId" ColumnName="returnOfSalesId" />
+          <ScalarProperty Name="paymentTypeId" ColumnName="paymentTypeId" />
+          <ScalarProperty Name="salesmanSaleDayId" ColumnName="salesmanSaleDayId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="salesdays">
+      <EntityTypeMapping TypeName="RetailModel.salesday">
+        <MappingFragment StoreEntitySet="salesday">
+          <ScalarProperty Name="salesDayId" ColumnName="salesDayId" />
+          <ScalarProperty Name="startDateTime" ColumnName="startDateTime" />
+          <ScalarProperty Name="saleNumber" ColumnName="saleNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="salesmansaledays">
+      <EntityTypeMapping TypeName="RetailModel.salesmansaleday">
+        <MappingFragment StoreEntitySet="salesmansaleday">
+          <ScalarProperty Name="salesmanSaleDayId" ColumnName="salesmanSaleDayId" />
+          <ScalarProperty Name="dayStartTime" ColumnName="dayStartTime" />
+          <ScalarProperty Name="dayEndTime" ColumnName="dayEndTime" />
+          <ScalarProperty Name="startingAmount" ColumnName="startingAmount" />
+          <ScalarProperty Name="endingAmount" ColumnName="endingAmount" />
+          <ScalarProperty Name="statusName" ColumnName="statusName" />
+          <ScalarProperty Name="salesDayId" ColumnName="salesDayId" />
+          <ScalarProperty Name="empId" ColumnName="empId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="salesmanstatus">
+      <EntityTypeMapping TypeName="RetailModel.salesmanstatu">
+        <MappingFragment StoreEntitySet="salesmanstatus">
+          <ScalarProperty Name="statusName" ColumnName="statusName" />
+          <ScalarProperty Name="statusDisc" ColumnName="statusDisc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="solditems">
+      <EntityTypeMapping TypeName="RetailModel.solditem">
+        <MappingFragment StoreEntitySet="solditems">
+          <ScalarProperty Name="soldItemId" ColumnName="soldItemId" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="salesId" ColumnName="salesId" />
+          <ScalarProperty Name="productDetailId" ColumnName="productDetailId" />
+          <ScalarProperty Name="discountpercent" ColumnName="discountpercent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="soldstocks">
+      <EntityTypeMapping TypeName="RetailModel.soldstock">
+        <MappingFragment StoreEntitySet="soldstock">
+          <ScalarProperty Name="soldStokId" ColumnName="soldStokId" />
+          <ScalarProperty Name="stockId" ColumnName="stockId" />
+          <ScalarProperty Name="soldItemId" ColumnName="soldItemId" />
+          <ScalarProperty Name="rowQuantity" ColumnName="rowQuantity" />
+          <ScalarProperty Name="singleItemPrice" ColumnName="singleItemPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="stocks">
+      <EntityTypeMapping TypeName="RetailModel.stock">
+        <MappingFragment StoreEntitySet="stock">
+          <ScalarProperty Name="stockId" ColumnName="stockId" />
+          <ScalarProperty Name="productSuppliedId" ColumnName="productSuppliedId" />
+          <ScalarProperty Name="orderPartialsId" ColumnName="orderPartialsId" />
+          <ScalarProperty Name="sellingPricePrItem" ColumnName="sellingPricePrItem" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+          <ScalarProperty Name="itemSold" ColumnName="itemSold" />
+          <ScalarProperty Name="batchNO" ColumnName="batchNO" />
+          <ScalarProperty Name="expiryDate" ColumnName="expiryDate" />
+          <ScalarProperty Name="quantityReceived" ColumnName="quantityReceived" />
+          <ScalarProperty Name="PricePrItem" ColumnName="PricePrItem" />
+          <ScalarProperty Name="discountPercentage" ColumnName="discountPercentage" />
+          <ScalarProperty Name="packSize" ColumnName="packSize" />
+          <ScalarProperty Name="barCode" ColumnName="barCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="suppliers">
+      <EntityTypeMapping TypeName="RetailModel.supplier">
+        <MappingFragment StoreEntitySet="supplier">
+          <ScalarProperty Name="supplierId" ColumnName="supplierId" />
+          <ScalarProperty Name="supplierName" ColumnName="supplierName" />
+          <ScalarProperty Name="supplierContactNumber" ColumnName="supplierContactNumber" />
+          <ScalarProperty Name="supplierEmail" ColumnName="supplierEmail" />
+          <ScalarProperty Name="manufecture" ColumnName="manufecture" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="address" ColumnName="address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="RetailModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="enabled" ColumnName="enabled" />
+          <ScalarProperty Name="authorityId" ColumnName="authorityId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
