@@ -4,7 +4,6 @@ using System.Linq;
 using System.Data.Entity;
 using RetailCustomer.DAL;
 
-
 namespace RetailCustomer.DAL
 {
     public class PharmacyDAL
