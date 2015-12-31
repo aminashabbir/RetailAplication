@@ -88,6 +88,21 @@
     <Compile Include="configdetail.cs">
       <DependentUpon>ShopModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DAL\CompanyInfo.cs" />
+    <Compile Include="DAL\CostReprtDataType.cs" />
+    <Compile Include="DAL\ForExpiryAlerts.cs" />
+    <Compile Include="DAL\IdAndSum.cs" />
+    <Compile Include="DAL\NextOrderStatus.cs" />
+    <Compile Include="DAL\OrderPlaceTable.cs" />
+    <Compile Include="DAL\OrderReciveStructure.cs" />
+    <Compile Include="DAL\OrderTableStructure.cs" />
+    <Compile Include="DAL\PharmacyDAL.cs" />
+    <Compile Include="DAL\ProductListWithSizeAndCategory.cs" />
+    <Compile Include="DAL\ReturnOfSalesStructure.cs" />
+    <Compile Include="DAL\ReturnValuesForStock.cs" />
+    <Compile Include="DAL\RoleReturnType.cs" />
+    <Compile Include="DAL\SalesTableStructure.cs" />
+    <Compile Include="DAL\StockType.cs" />
     <Compile Include="DAL\TodaySales.cs" />
     <Compile Include="DAL\SaleWithInStockItem.cs" />
     <Compile Include="department.cs">

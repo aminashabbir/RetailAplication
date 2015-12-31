@@ -91,9 +91,9 @@ namespace RetailCustomer
                 this.ActiveControl = txt_search2;
                 return true;
             }
-            if (keyData == (Keys.Control | Keys.D))
-            {
-                this.ActiveControl = txt_discountinrupees;
+                if (keyData == (Keys.Control | Keys.D))
+                {
+                    this.ActiveControl = txt_discountinrupees;
                 return true;
             }
             if (keyData == (Keys.Control | Keys.X))
