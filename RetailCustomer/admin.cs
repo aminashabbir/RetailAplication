@@ -16,5 +16,35 @@ namespace RetailCustomer
         {
             InitializeComponent();
         }
+
+        private void admin_Load(object sender, EventArgs e)
+        {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
     }
 }
