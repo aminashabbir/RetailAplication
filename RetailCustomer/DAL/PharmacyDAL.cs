@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Data.Entity;
+
 using RetailCustomer.DAL;
+using System.Web.Helpers;
+using System.Web.Mvc;
 
 namespace RetailCustomer.DAL
 {
@@ -883,8 +886,8 @@ namespace RetailCustomer.DAL
 
         public void EditDepartment(department dep)
         {
-            db.Entry(dep).State = EntityState.Modified;
-            db.SaveChanges();
+            //db.Entry(dep).State = EntityState.Modified;
+            //db.SaveChanges();
         }
 
         #endregion
@@ -1698,7 +1701,7 @@ namespace RetailCustomer.DAL
          public int GetSaleNumber(int SaleDayId)
         {
             int salenumber = 0;
-            using (shopeoneEntities db2 = new shopeoneEntities())
+            using (tobaccocastleEntities db2 = new tobaccocastleEntities())
             {
                 salesday s = db2.salesdays.Find(SaleDayId);
                 salenumber = (int)s.saleNumber;
@@ -3352,7 +3355,7 @@ namespace RetailCustomer.DAL
               item.QuantityReturn = (int)ret.quantityReturn;
               item.AmountReturn = (int)ret.amount;
               item.SoldItemID = ret.borrowReturnItemsId;
-              using(shopeoneEntities fdb=new shopeoneEntities()){
+              using(tobaccocastleEntities fdb=new tobaccocastleEntities()){
               var checkBRI =fdb.borrowreturnitems.Where(b=>b.borrowLendStockId==ret.borrowLendStockId);
               OldQuantity = 0;
               foreach (var chk in checkBRI)
@@ -3646,14 +3649,7 @@ namespace RetailCustomer.DAL
       }
       
       #endregion
-      protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+      
       
     }
 }
