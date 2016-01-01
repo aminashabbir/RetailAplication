@@ -33,3 +33,18 @@ E:\Visual Studio Projects\POS\RetailCustomer\obj\Debug\RetailCustomer.Properties
 E:\Visual Studio Projects\POS\RetailCustomer\obj\Debug\RetailCustomer.SaleForm.resources
 E:\Visual Studio Projects\POS\RetailCustomer\obj\Debug\RetailCustomer.StartDay.resources
 E:\Visual Studio Projects\POS\RetailCustomer\obj\Debug\RetailCustomer.csproj.GenerateResource.Cache
+E:\Git working\RetailAplication\RetailCustomer\bin\Debug\RetailCustomer.exe.config
+E:\Git working\RetailAplication\RetailCustomer\obj\Debug\RetailCustomer.exe
+E:\Git working\RetailAplication\RetailCustomer\obj\Debug\RetailCustomer.pdb
+E:\Git working\RetailAplication\RetailCustomer\obj\Debug\RetailCustomer.csprojResolveAssemblyReference.cache
+E:\Git working\RetailAplication\RetailCustomer\obj\Debug\RetailCustomer.Login.resources
+E:\Git working\RetailAplication\RetailCustomer\obj\Debug\RetailCustomer.Properties.Resources.resources
+E:\Git working\RetailAplication\RetailCustomer\obj\Debug\RetailCustomer.SaleForm.resources
+E:\Git working\RetailAplication\RetailCustomer\obj\Debug\RetailCustomer.StartDay.resources
+E:\Git working\RetailAplication\RetailCustomer\obj\Debug\RetailCustomer.csproj.GenerateResource.Cache
+E:\Git working\RetailAplication\RetailCustomer\bin\Debug\RetailCustomer.exe
+E:\Git working\RetailAplication\RetailCustomer\bin\Debug\RetailCustomer.pdb
+E:\Git working\RetailAplication\RetailCustomer\bin\Debug\EntityFramework.dll
+E:\Git working\RetailAplication\RetailCustomer\bin\Debug\EntityFramework.SqlServer.dll
+E:\Git working\RetailAplication\RetailCustomer\bin\Debug\EntityFramework.xml
+E:\Git working\RetailAplication\RetailCustomer\bin\Debug\EntityFramework.SqlServer.xml
