@@ -48,3 +48,6 @@ E:\Git working\RetailAplication\RetailCustomer\bin\Debug\EntityFramework.dll
 E:\Git working\RetailAplication\RetailCustomer\bin\Debug\EntityFramework.SqlServer.dll
 E:\Git working\RetailAplication\RetailCustomer\bin\Debug\EntityFramework.xml
 E:\Git working\RetailAplication\RetailCustomer\bin\Debug\EntityFramework.SqlServer.xml
+F:\Git WorkSpace\retailsystem\RetailAplication\RetailCustomer\bin\Debug\MySql.Data.Entity.EF5.dll
+F:\Git WorkSpace\retailsystem\RetailAplication\RetailCustomer\bin\Debug\MySql.Data.Entity.EF6.dll
+F:\Git WorkSpace\retailsystem\RetailAplication\RetailCustomer\obj\Debug\RetailCustomer.csproj.RetailCustomer.exe.config

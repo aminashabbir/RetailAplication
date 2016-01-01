@@ -13,9 +13,11 @@ namespace RetailCustomer
 
     public partial class Login : Form
     {
+        DAL.PharmacyDAL pdal;
         public Login()
         {
             InitializeComponent();
+            pdal = new DAL.PharmacyDAL();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -30,7 +32,10 @@ namespace RetailCustomer
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            
+            string username = txt_username.Text;
+            string password = txt_password.Text;
+
+            string aut = pdal.Login(username, password);
             this.Hide();
             StartDay s = new StartDay();
             s.ShowDialog();
