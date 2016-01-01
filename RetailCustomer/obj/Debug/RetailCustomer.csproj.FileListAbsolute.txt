@@ -28,3 +28,8 @@ F:\Git WorkSpace\retailsystem\RetailAplication\RetailCustomer\obj\Debug\RetailCu
 F:\Git WorkSpace\retailsystem\RetailAplication\RetailCustomer\obj\Debug\RetailCustomer.csproj.GenerateResource.Cache
 F:\Git WorkSpace\retailsystem\RetailAplication\RetailCustomer\obj\Debug\RetailCustomer.exe
 F:\Git WorkSpace\retailsystem\RetailAplication\RetailCustomer\obj\Debug\RetailCustomer.pdb
+E:\Visual Studio Projects\POS\RetailCustomer\obj\Debug\RetailCustomer.Login.resources
+E:\Visual Studio Projects\POS\RetailCustomer\obj\Debug\RetailCustomer.Properties.Resources.resources
+E:\Visual Studio Projects\POS\RetailCustomer\obj\Debug\RetailCustomer.SaleForm.resources
+E:\Visual Studio Projects\POS\RetailCustomer\obj\Debug\RetailCustomer.StartDay.resources
+E:\Visual Studio Projects\POS\RetailCustomer\obj\Debug\RetailCustomer.csproj.GenerateResource.Cache
