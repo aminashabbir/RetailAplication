@@ -33,7 +33,7 @@
             this.nup_addamount = new System.Windows.Forms.NumericUpDown();
             this.lbl_addstart = new System.Windows.Forms.Label();
             this.btn_startday = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lbl_username = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nup_addamount)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,13 +84,14 @@
             this.btn_startday.UseVisualStyleBackColor = true;
             this.btn_startday.Click += new System.EventHandler(this.button1_Click);
             // 
-            // comboBox1
+            // lbl_username
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(239, 378);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 4;
+            this.lbl_username.AutoSize = true;
+            this.lbl_username.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lbl_username.Location = new System.Drawing.Point(232, 103);
+            this.lbl_username.Name = "lbl_username";
+            this.lbl_username.Size = new System.Drawing.Size(0, 13);
+            this.lbl_username.TabIndex = 4;
             // 
             // StartDay
             // 
@@ -99,7 +100,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(612, 452);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.lbl_username);
             this.Controls.Add(this.btn_startday);
             this.Controls.Add(this.lbl_addstart);
             this.Controls.Add(this.nup_addamount);
@@ -120,6 +121,6 @@
         private System.Windows.Forms.NumericUpDown nup_addamount;
         private System.Windows.Forms.Label lbl_addstart;
         private System.Windows.Forms.Button btn_startday;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lbl_username;
     }
 }

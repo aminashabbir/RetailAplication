@@ -15,6 +15,7 @@ namespace RetailCustomer
         public StartDay()
         {
             InitializeComponent();
+            lbl_username.Text = "Welcome "+SessionData.UserName;
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)

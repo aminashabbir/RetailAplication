@@ -34,7 +34,7 @@ namespace RetailCustomer
         {
             string username = txt_username.Text;
             string password = txt_password.Text;
-
+            SessionData.UserName = username;
             string aut = pdal.Login(username, password);
             this.Hide();
             StartDay s = new StartDay();

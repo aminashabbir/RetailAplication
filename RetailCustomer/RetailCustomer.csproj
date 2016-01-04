@@ -197,6 +197,7 @@
     <Compile Include="salesmanstatu.cs">
       <DependentUpon>ShopModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="SessionData.cs" />
     <Compile Include="ShopModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
