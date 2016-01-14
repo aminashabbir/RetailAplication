@@ -6,12 +6,15 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 using System.Windows.Forms;
 
 namespace RetailCustomer
 {
     public partial class SaleForm : Form
     {
+        DAL.PharmacyDAL pdal= new DAL.PharmacyDAL();
+        SaleForm s = new SaleForm();
         public SaleForm()
         {
             InitializeComponent();
@@ -24,6 +27,8 @@ namespace RetailCustomer
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+
 
         }
 
@@ -75,6 +80,8 @@ namespace RetailCustomer
 
         private void txt_amount_TextChanged(object sender, EventArgs e)
         {
+
+
             int anInteger;
             anInteger = Convert.ToInt32(txt_amount.Text);
             anInteger = int.Parse(txt_amount.Text);
@@ -91,9 +98,9 @@ namespace RetailCustomer
                 this.ActiveControl = txt_search2;
                 return true;
             }
-                if (keyData == (Keys.Control | Keys.D))
-                {
-                    this.ActiveControl = txt_discountinrupees;
+            if (keyData == (Keys.Control | Keys.D))
+            {
+                this.ActiveControl = txt_discountinrupees;
                 return true;
             }
             if (keyData == (Keys.Control | Keys.X))
@@ -144,11 +151,15 @@ namespace RetailCustomer
         {
 
         }
-
+        
         private void txt_search2_TextChanged(object sender, EventArgs e)
         {
-
+            DAL.PharmacyDAL pdal = new DAL.PharmacyDAL();
+            SelectList sList = pdal.SearchProduct(txt_search2);
+            txt_search2.Show();
         }
+
+        
 
         private void cmb_payment_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -157,13 +168,21 @@ namespace RetailCustomer
 
         private void SaleForm_Load(object sender, EventArgs e)
         {
-
+            //var source = new AutoCompleteSource();
             
+            
+
+             
         }
+            
+           
+
+        
+
 
         private void txt_Name_TextChanged(object sender, EventArgs e)
         {
-           
+
 
         }
 
@@ -183,14 +202,21 @@ namespace RetailCustomer
 
         private void rdb_noprint_CheckedChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void list_suspendedsale_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            SessionData.SalesID= null;
+            list_suspendedsale.Show();
         }
-        
-      
+        private void lbl_delete_Click(object sender, EventArgs e)
+        {
+
+        }
+        public string SearchKey { get; set; }
+        public  string SearchKey { get; set; }
+        public AutoCompleteMode AutoCompleteMode { get; set; }
     }
 }
+

@@ -75,6 +75,8 @@
             // 
             // txt_search2
             // 
+            this.txt_search2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txt_search2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.AllSystemSources;
             this.txt_search2.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txt_search2.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_search2.Location = new System.Drawing.Point(330, 76);
@@ -187,6 +189,7 @@
             this.lbl_delete.Size = new System.Drawing.Size(45, 15);
             this.lbl_delete.TabIndex = 27;
             this.lbl_delete.Text = "Delete";
+            this.lbl_delete.Click += new System.EventHandler(this.lbl_delete_Click);
             // 
             // lbl_price
             // 
@@ -313,6 +316,7 @@
             this.rdb_withprint.TabStop = true;
             this.rdb_withprint.Text = "With Print";
             this.rdb_withprint.UseVisualStyleBackColor = true;
+            this.rdb_withprint.CheckedChanged += new System.EventHandler(this.rdb_withprint_CheckedChanged);
             // 
             // rdb_noprint
             // 
@@ -435,6 +439,13 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+       
+
+        private void rdb_withprint_CheckedChanged(object sender, System.EventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
 
         #endregion

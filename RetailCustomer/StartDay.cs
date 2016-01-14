@@ -10,8 +10,12 @@ using System.Windows.Forms;
 
 namespace RetailCustomer
 {
+    
+    
     public partial class StartDay : Form
     {
+        DAL.PharmacyDAL pdal= new DAL.PharmacyDAL();
+        StartDay s = new StartDay();
         public StartDay()
         {
             InitializeComponent();
@@ -37,5 +41,38 @@ namespace RetailCustomer
             }
 
         }
+
+        private void StartDay_Load(object sender, EventArgs e)
+        {
+             try
+            {
+              
+                int EmpID = int.Parse(SessionData.EmpID.ToString());
+                int SaleDayId = int.Parse(SessionData.ThisSaleDayId.ToString());
+                int? GetAnyPreviousDayOpen = pdal.CheckPreviousDayOpen(SaleDayId,EmpID);
+                if (GetAnyPreviousDayOpen !=null)
+                {   // check time  if > cutoff time                 
+                   
+                   // return RedirectToAction("closeThisDaySale", new { preId= GetAnyPreviousDayOpen});
+                
+                }
+                bool chkchk = pdal.CheckSalesmanDayOpen(EmpID, SaleDayId);
+                if (chkchk)
+                { 
+                    SessionData.SalesmanDayId = pdal.GetSalesmanDayOpenID(EmpID, SaleDayId);
+                    s.ShowDialog();
+                }
+                else
+                {
+                    s.ShowDialog();
+                }
+            }
+            catch {
+                 s.Hide();
+                Login l = new Login();
+                l.ShowDialog();
+            }
+        }
+        
     }
 }

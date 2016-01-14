@@ -109,6 +109,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "StartDay";
             this.Text = "StartDay";
+            this.Load += new System.EventHandler(this.StartDay_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nup_addamount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

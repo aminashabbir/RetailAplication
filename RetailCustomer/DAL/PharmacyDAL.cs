@@ -3649,8 +3649,13 @@ namespace RetailCustomer.DAL
       }
       
       #endregion
-      
-      
+
+
+
+      internal SelectList SearchProduct(System.Windows.Forms.TextBox txt_search2)
+      {
+          throw new NotImplementedException();
+      }
     }
 }
 

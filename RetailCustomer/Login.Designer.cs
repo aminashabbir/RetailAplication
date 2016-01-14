@@ -34,6 +34,7 @@
             this.lbl_password = new System.Windows.Forms.Label();
             this.txt_username = new System.Windows.Forms.TextBox();
             this.txt_password = new System.Windows.Forms.TextBox();
+            this.lbl_error = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_login
@@ -92,6 +93,14 @@
             this.txt_password.UseSystemPasswordChar = true;
             this.txt_password.TextChanged += new System.EventHandler(this.txt_password_TextChanged);
             // 
+            // lbl_error
+            // 
+            this.lbl_error.AutoSize = true;
+            this.lbl_error.Location = new System.Drawing.Point(185, 312);
+            this.lbl_error.Name = "lbl_error";
+            this.lbl_error.Size = new System.Drawing.Size(0, 16);
+            this.lbl_error.TabIndex = 5;
+            // 
             // Login
             // 
             this.AccessibleName = "admin ";
@@ -102,6 +111,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(535, 421);
+            this.Controls.Add(this.lbl_error);
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.txt_username);
             this.Controls.Add(this.lbl_password);
@@ -111,6 +121,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,6 +134,7 @@
         private System.Windows.Forms.Label lbl_password;
         private System.Windows.Forms.TextBox txt_username;
         private System.Windows.Forms.TextBox txt_password;
+        private System.Windows.Forms.Label lbl_error;
     }
 }
 
